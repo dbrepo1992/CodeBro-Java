@@ -548,6 +548,8 @@ public class Main {
 
         // NESTED IF STATEMENTS
 
+        /*
+
         boolean isStudent = false;
         boolean isSenior = true;
         double price = 9.99;
@@ -573,5 +575,68 @@ public class Main {
 
 
         System.out.printf("The price of a ticket is: $ %.2f", price);
+
+         */
+
+
+        //-------------------------------------------------------------------
+
+        // STRING METHODS
+
+        String name = "Password";
+
+        // int length = name.length();
+        // char letter = name.charAt(0);
+        // int index = name.indexOf("d");
+        // int lastIndex = name.lastIndexOf("o");
+
+        // name = name.toUpperCase();
+        // name = name.toLoweCase();
+        // name = name.replace("o", "u");
+        // name = name.trim();  // this method remove white spaces before and after your String.
+
+
+        /*
+        if(name.isEmpty()){
+            System.out.println("You have to insert your name");
+        } else{
+            System.out.println("Your name is " + name);
+        }
+
+         */
+
+
+        // System.out.println(length);
+        // System.out.println(letter);
+        // System.out.println(index);
+        // System.out.println(lastIndex);
+        // System.out.println(name);
+        // System.out.println(name.isEmpty()); // This method check that your String is empty. It's return boolean value (true / false)
+
+        /*
+        if(name.contains(" ")){
+            System.out.println("Your name contains a space");
+        } else {
+            System.out.println("Your name does not contain any spaces");
+        }
+
+         */
+
+        /*
+
+        if(name.equalsIgnoreCase("password")){
+            System.out.println("Your name can't be password");
+        } else {
+            System.out.println("Hello " + name);
+        }
+
+         */
+
+
+        //----------------------------------------------------------
+
+        // SUBSTRINGS
+
+        
     }
 }
