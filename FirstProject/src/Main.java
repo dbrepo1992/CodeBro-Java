@@ -723,6 +723,8 @@ public class Main {
 
         // variable = (condition) ? ifTrue : ifFalse;
 
+        /*
+
         Scanner scanner = new Scanner(System.in);
         int score;
 
@@ -751,5 +753,37 @@ public class Main {
 
         double taxes = (income >= 40000) ? income * 0.25 : income * 0.15;
         System.out.println("$" + taxes);
+
+        scanner.close();
+         */
+
+        //------------------------------------------------------------------
+
+        // TEMPERATURE CONVENTER
+
+        /*
+
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        double temperature;
+        double newTemperature;
+        String unit;    // we can use char also for unit but String had a lot more methods.
+
+        System.out.print("Enter the temperature: ");
+        temperature = scanner.nextDouble();
+
+        System.out.print("Convert to Celsius or Fahrenheit? (C or F): ");
+        unit = scanner.next().toUpperCase();
+
+
+        newTemperature = (unit.equals("C")) ? (temperature - 32) / 1.8 : (temperature * 1.8) + 32;
+
+        System.out.printf("%.1f°%s", newTemperature, unit);
+        scanner.close();
+
+         */
+
+        //-----------------------------------------------------------------------
+
     }
 }
