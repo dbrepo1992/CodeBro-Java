@@ -639,6 +639,8 @@ public class Main {
         // .substring() = A method used to extract a portion of a string
         //                string.substring(start, end)
 
+        /*
+
         String email = "pigeon2312@mairoo.com";
         String userName = email.substring(0,10);
         String domain = email.substring(11, 21);
@@ -669,5 +671,53 @@ public class Main {
 
         scanner.close();
 
+         */
+
+
+        // WEIGHT CONVERSION PROGRAM
+
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        // Declare variables
+
+
+        double weight;
+        double newWeight;
+        int choice;
+
+
+
+        // welcome message
+
+        System.out.println("Welcome to WEIGHT CONVERSION PROGRAM!");
+
+        // prompt for user choice
+        System.out.println("What is your choice?\n 1: Convert lbs to kgs\n 2: Convert kgs to lbs");
+        choice = scanner.nextInt();
+
+
+        // option 1 convert lbs to kgs
+    if (choice == 1){
+        System.out.println("Please enter the weight in lbs: ");
+        weight = scanner.nextDouble();
+        newWeight = weight * 0.45359237;
+        System.out.printf("The new weight in kgs is: %.2f", newWeight);
+    } else if (choice == 2) {
+        System.out.println("Please enter the weight in kgs: ");
+        weight = scanner.nextDouble();
+        newWeight = weight * 2.20462262;
+        System.out.printf("The new weight in lbs is: %.2f", newWeight);
+    } else {
+        System.out.println("Invalid choice!");
+    }
+
+    scanner.close();
+
+
+        // option 2 convert kgs to lbs
+
+
+
+        // else print not a valid choice
     }
 }
