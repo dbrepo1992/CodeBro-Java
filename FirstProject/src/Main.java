@@ -676,9 +676,10 @@ public class Main {
 
         // WEIGHT CONVERSION PROGRAM
 
+        /*
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        // Declare variables
+
 
 
         double weight;
@@ -687,16 +688,16 @@ public class Main {
 
 
 
-        // welcome message
+
 
         System.out.println("Welcome to WEIGHT CONVERSION PROGRAM!");
 
-        // prompt for user choice
+
         System.out.println("What is your choice?\n 1: Convert lbs to kgs\n 2: Convert kgs to lbs");
         choice = scanner.nextInt();
 
 
-        // option 1 convert lbs to kgs
+
     if (choice == 1){
         System.out.println("Please enter the weight in lbs: ");
         weight = scanner.nextDouble();
@@ -713,11 +714,42 @@ public class Main {
 
     scanner.close();
 
+         */
 
-        // option 2 convert kgs to lbs
+        //---------------------------------------------------------------------------
 
+        // TERNARY OPERATOR
+        // ternary operator ?= Return 1 of 2 values if a condition is true
 
+        // variable = (condition) ? ifTrue : ifFalse;
 
-        // else print not a valid choice
+        Scanner scanner = new Scanner(System.in);
+        int score;
+
+        System.out.println("What is your score?: ");
+        score = scanner.nextInt();
+        String passOrFail = (score >= 60) ? "Pass" : "Fail";
+
+        System.out.println("Your result is: " + passOrFail);
+
+        int number;
+        System.out.println("Enter a number: ");
+        number = scanner.nextInt();
+
+        String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
+        System.out.println(evenOrOdd);
+
+        int hours;
+        System.out.println("Enter a number of hours: ");
+        hours = scanner.nextInt();
+        String timeOfDay = (hours < 12) ? "a.m" : "p.m";
+        System.out.println(timeOfDay);
+
+        int income;
+        System.out.println("What is your income? ");
+        income = scanner.nextInt();
+
+        double taxes = (income >= 40000) ? income * 0.25 : income * 0.15;
+        System.out.println("$" + taxes);
     }
 }
