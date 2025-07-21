@@ -636,7 +636,38 @@ public class Main {
         //----------------------------------------------------------
 
         // SUBSTRINGS
+        // .substring() = A method used to extract a portion of a string
+        //                string.substring(start, end)
 
-        
+        String email = "pigeon2312@mairoo.com";
+        String userName = email.substring(0,10);
+        String domain = email.substring(11, 21);
+
+        System.out.println(userName);
+        System.out.println(domain);
+
+        // to make this method flexible
+
+        Scanner scanner = new Scanner(System.in);
+        String email1;
+        String username1;
+        String domain1;
+
+        System.out.println("Enter your email? ");
+        email1 = scanner.nextLine();
+        if(email1.contains("@")){
+            String userName1 = email1.substring(0,email1.indexOf("@"));
+            domain1 = email1.substring(email1.indexOf("@") + 1); // + 1 removed "@" from output
+
+            System.out.println(userName1);
+            System.out.println(domain1);
+        } else {
+            System.out.println("Your email is incorrect! Email must contain @");
+        }
+
+
+
+        scanner.close();
+
     }
 }
