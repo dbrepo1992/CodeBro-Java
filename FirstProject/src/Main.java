@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -1050,6 +1048,8 @@ public class Main {
 
         // FIFTH EXAMPLE
 
+        /*
+
         int number = 0;
 
         do {
@@ -1059,11 +1059,48 @@ public class Main {
 
         System.out.println("You picked " + number);
 
+         */
+
+        //------------------------------------------------------------------------
+
+        // NUMBER GUESSING GAME
+
+        /*
+
+        Random random = new Random();
+
+        int guess;
+        int attempts = 0;
+        int min = 1;
+        int max = 100;
+        int randomNumber = random.nextInt(min, max + 1); // +1 because last number is exclusive
+
+        System.out.println("NUMBER GUESSING GAME!");
+
+        do{
+            System.out.printf("Guess a number between %d-%d\n", min, max);
+            guess = scanner.nextInt();
+            attempts++;
+
+            if (guess < randomNumber){
+                System.out.println("Too low, try bit higher");
+            } else if (guess > randomNumber){
+                System.out.println("Too high, try bit lower");
+            }  else {
+                System.out.println("Correct! The number was " + randomNumber);
+                System.out.println("Number of attempts: " + attempts);
+            }
+        } while(guess != randomNumber);
+
+         */
+
+        //-----------------------------------------------------------
+
+        
+
         scanner.close();
 
 
-
-        //-----------------------------------------------------------
 
 
     }
