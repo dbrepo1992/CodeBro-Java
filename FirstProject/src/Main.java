@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -858,6 +860,58 @@ public class Main {
 
         //----------------------------------------------------------------------
 
-        
+        // CALCULATOR PROGRAM
+
+        /*
+
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+
+        double firstNumber;
+        double secondNumber;
+        char operator;
+        double result = 0; // in this case you can't leave result uninitialized because program
+        boolean zeroDivision = true; // this boolean is used to stop the program while user divide by zero.
+
+        System.out.println("Enter first number: ");
+        firstNumber = scanner.nextDouble();
+
+        System.out.println("Enter an operator (+, -, *, /, ^)");
+        operator = scanner.next().charAt(0); // this method let you return a single character.
+                                            // In this case U using type of something and want only first character.
+
+        System.out.println("Enter second number: ");
+        secondNumber = scanner.nextDouble();
+
+        switch (operator){
+            case '+' -> result = firstNumber + secondNumber;
+            case '-' -> result = firstNumber - secondNumber;
+            case '*' -> result = firstNumber * secondNumber;
+            case '/' -> {
+                if (secondNumber == 0) {
+                    System.out.println("You can't divide by zero!");
+                    zeroDivision = false;
+                } else {
+                    result = firstNumber / secondNumber;
+                }
+            }
+            case '^' -> result = (Math.pow(firstNumber, secondNumber));
+            default -> {
+                    System.out.println("There is no operator like " + operator + "!");
+                    zeroDivision = false;
+            }
+        }
+        if(zeroDivision == true) {  // u can also use if(zeroDivision) because default in boolean is true;
+            System.out.println(result);
+        }
+
+        scanner.close();
+
+         */
+
+        //-----------------------------------------------------------------
+
+        //
+
     }
 }
