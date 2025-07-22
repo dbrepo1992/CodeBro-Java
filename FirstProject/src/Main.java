@@ -785,5 +785,79 @@ public class Main {
 
         //-----------------------------------------------------------------------
 
+        // ENHANCED SWITCH = A replacement to many else if statements (Java14 feature)
+
+        /*
+
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        String day;
+
+        System.out.println("Enter the day of the week: ");
+        day = scanner.nextLine();
+
+         */
+
+        /*
+
+        // if,else statements
+
+
+        if (day.equals("MONDAY")){
+            System.out.println("It is a weekday");
+        } else if(day.equals("TUESDAY")){
+            System.out.println("It is a weekday");
+        } else if(day.equals("WEDNESDAY")){
+            System.out.println("It is a weekday");
+        } else if(day.equals("THURSDAY")){
+            System.out.println("It is a weekday");
+        } else if(day.equals("FRIDAY")){
+            System.out.println("It is a weekday");
+        } else if(day.equals("SATURDAY")){
+            System.out.println("It is the weekend");
+        } else if(day.equals("SUNDAY")){
+            System.out.println("It is the weekend");
+        } else {
+            System.out.println("There is no day like " + day + "!");
+        }
+
+         */
+
+        // okay so alternative instance with ENHANCED SWITCH
+
+        /*
+
+        switch(day){
+            case "MONDAY" -> System.out.println("It is a weekday.");
+            case "TUESDAY" -> System.out.println("It is a weekday.");
+            case "WEDNESDAY" -> System.out.println("It is a weekday.");
+            case "THURSDAY" -> System.out.println("It is a weekday.");
+            case "FRIDAY" -> System.out.println("It is a weekday.");
+            case "SATURDAY" -> System.out.println("It is the weekend!");
+            case "SUNDAY" -> System.out.println("It is the weekend!");
+            default -> System.out.println("There no day like " + day + "!");
+        }
+
+         */
+
+        // ENHANCED SWITCH with DRY ( Don't Repeat Yourself! ) methodology.
+        /*
+
+        switch (day){
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ->
+                    System.out.println("This is a weekday.");
+            case "Saturday", "Sunday" ->
+                    System.out.println("This is the weekend!");
+            default ->
+                    System.out.println("There no day like " + day + "!");
+        }
+
+        scanner.close();
+
+        */
+
+        //----------------------------------------------------------------------
+
+        
     }
 }
