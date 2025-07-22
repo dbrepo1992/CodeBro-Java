@@ -585,7 +585,7 @@ public class Main {
 
         // STRING METHODS
 
-        String name = "Password";
+        // String name = "Password";
 
         // int length = name.length();
         // char letter = name.charAt(0);
@@ -911,7 +911,160 @@ public class Main {
 
         //-----------------------------------------------------------------
 
-        //
+        // LOGICAL OPERATORS
+
+        // && = AND  // in this LOGICAL OPERATOR all conditions must be TRUE
+        // || = OR // in this LOGICAL OPERATOR at least one condition must be TRUE
+        // !  = NOT // in this LOGICAL OPERATOR at least one condition must be FALSE
+
+        // Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        // First example
+        /*
+        double temp = -20;
+        boolean isSunny = true;
+
+        if(temp >= 5 && temp <= 30 && isSunny) {
+            System.out.println("The weather is nice");
+            System.out.println("It is SUNNY outside");
+        } else if (temp >= 5 && temp <= 30 && !isSunny){
+            System.out.println("The weather is GOOD");
+            System.out.println("It is CLOUDY outside");
+        } else if (temp < 0 || temp > 30){
+            System.out.println("The weather is BAD");
+        }
+
+         */
+
+        // Second example
+
+        // username must be between 4-12 characters
+        // username must not contain spaces or underscores
+
+        /*
+
+        String username;
+        System.out.println("Enter your username: ");
+        username = scanner.nextLine();
+
+        if (username.length() > 12 || username.length() < 4) {
+            System.out.println("Your username must be between 4-12 characters!");
+        } else if (username.contains("_") || username.contains(" ")) {
+            System.out.println("Username can't contain spaces or underscores");
+        } else {
+            System.out.println("Welcome " + username);
+        }
+
+
+
+        scanner.close();
+
+         */
+
+        // ---------------------------------------------------------------
+
+        // WHILE LOOP = repeat some code forever
+        //              while some condition remains true
+
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        String name = "";
+
+        /*
+        //  EXAMPLE OF INFINITY LOOP [Before you run this code, make sure that your pc will not explode :D
+
+        while(1 == 1) {
+            System.out.println("HELP! I'M STUCK IN A LOOP!");
+        }
+         */
+
+        /*
+        // SECOND EXAMPLE WITH String method .isEmpty()
+
+        while (name.isEmpty()){
+            System.out.println("Enter your name (cannot be empty!): ");
+            name = scanner.nextLine();
+        }
+
+        System.out.println("Welcome " + name);
+
+         */
+
+        // THIRD EXAMPLE with require response from user with check condition using String method .equals()
+
+        /*
+        String response = "";
+
+        while(!response.equals("Q")) {  // So in this condition loop is working while response is not (!) equal to Q. Q is requirement to quit the game.
+            System.out.println("You are playing a game");
+            System.out.println("Press Q to quit: ");
+            response = scanner.next().toUpperCase(); // You can use next() for single character in output
+        }
+
+        System.out.println("You have quit the game");
+
+         */
+
+        /*
+
+        int age = 0;
+
+        System.out.println("Enter your age: ");
+        age = scanner.nextInt();
+
+        // IF YOU TYPE IN SOMETHING IT'S VALID, YOU DON'T ENTER THE WHILE LOOP AT ALL.
+        // YOU ENTER THE WHILE LOOP ONLY IF YOUR TYPE IS NOT VALID WITH CONDITION.
+        // PROGRAM CHECK THE CONDITION BEFORE ENTER THE LOOP
+        // age = 25; -->
+        // so it's valid and skip the loop and go straight to the -->
+        // System.out.println("You are " + age + " years old");
+
+        while (age < 0){
+            System.out.println("Age cannot be negative!");
+            System.out.println("Enter your age: ");
+            age = scanner.nextInt();
+        }
+
+        System.out.println("You are " + age + " years old");
+
+        */
+
+        // FOURTH EXAMPLE WITH DO/WHILE LOOP
+
+        // In DO/WHILE loop we do the code first and then check the condition at the end.
+        // So in DO/WHILE loop you enter the loop at least once.
+
+        /*
+
+        int age = 0;
+
+        do{
+            System.out.println("Age cannot be negative!");
+            System.out.println("Enter your age: ");
+            age = scanner.nextInt();
+        }while(age < 0);
+
+        System.out.println("You are " + age + " years old");
+
+         */
+
+        // FIFTH EXAMPLE
+
+        int number = 0;
+
+        do {
+            System.out.println("Enter a number between 1 and 10: ");
+            number = scanner.nextInt();
+        } while(number < 1 || number > 10);
+
+        System.out.println("You picked " + number);
+
+        scanner.close();
+
+
+
+        //-----------------------------------------------------------
+
 
     }
 }
