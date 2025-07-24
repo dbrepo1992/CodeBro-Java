@@ -964,9 +964,9 @@ public class Main {
         // WHILE LOOP = repeat some code forever
         //              while some condition remains true
 
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        // Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        String name = "";
+        // String name = "";
 
         /*
         //  EXAMPLE OF INFINITY LOOP [Before you run this code, make sure that your pc will not explode :D
@@ -1095,6 +1095,20 @@ public class Main {
          */
 
         //-----------------------------------------------------------
+
+        // FOR LOOP = EXECUTE SOME CODE A CERTAIN AMOUNT OF TIMES
+        // however WHILE LOOP could execute infinity amount of times
+
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        System.out.println("Enter how many times you want to loop: ");
+        int max = scanner.nextInt();
+
+        for(int i = 0; i < 10; i+=2){
+            System.out.println("Pizza");
+            System.out.println(i);
+        }
+
 
         
 
