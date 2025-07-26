@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -1165,7 +1166,52 @@ public class Main {
             }
             System.out.print(i + " ");
         }
-        
+
          */
+
+        //------------------------------------------------------------------------------
+
+        // NESTED LOOP = A LOOP INSIDE ANOTHER LOOP
+        // USED OFTEN WITH MATRICES OR DATA STRUCTURES AND ALGORITHMS
+
+
+        /*
+
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 9; j++) {
+                System.out.print(j + " ");Thread.sleep(500);
+            }
+            System.out.println();
+        }
+
+
+         */
+
+        int rows;
+        int columns;
+        char symbol;
+
+
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        System.out.println("Enter the number of rows: ");
+        rows = scanner.nextInt();
+
+        System.out.println("Enter the number of columns: ");
+        columns = scanner.nextInt();
+
+        System.out.println("Enter the symbol to use: ");
+        symbol = scanner.next().charAt(0); // you need  method like charAt for example to input char symbol in scanner method.
+
+
+        for( int i = 1; i <= rows; i++){
+            for (int j = 1; j <= columns; j++){
+                System.out.print(symbol + " ");
+            }
+            System.out.println();
+        }
+
+
+        scanner.close();
     }
 }
