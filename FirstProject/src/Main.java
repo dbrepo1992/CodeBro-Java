@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // VARIABLES
 
@@ -1099,23 +1099,50 @@ public class Main {
         // FOR LOOP = EXECUTE SOME CODE A CERTAIN AMOUNT OF TIMES
         // however WHILE LOOP could execute infinity amount of times
 
+        /*
+
+
+
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println("Enter how many times you want to loop: ");
+
         int max = scanner.nextInt();
 
-        for(int i = 0; i < 10; i+=2){
+        for(int i = 1; i <= max; i++){
             System.out.println("Pizza");
             System.out.println(i);
         }
 
 
-        
-
         scanner.close();
 
 
+         */
+
+        // PROGRAM TO SIMULATE A COUNTDOWN
+
+        /*
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
 
+        System.out.println("You set the timer on the bomb, set the time in seconds it takes to leave the explosion area: ");
+        int start = scanner.nextInt();
+
+        for (int i = start; i > 0; i--){
+            System.out.println(i);
+            Thread.sleep(1000); // In this line, Java require to add [throws InterruptedException] to void main(String[] args) at the top.
+        }                             // This exception typically occurs when a thread running the method is interrupted while it is sleeping, waiting,
+                                      // or otherwise paused in its execution.
+
+        System.out.println("BOOM!");
+
+        scanner.close();
+
+         */
+
+        // -----------------------------------------------------------------------------
+
+        
     }
 }
