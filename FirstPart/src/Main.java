@@ -1187,6 +1187,8 @@ public class Main {
 
          */
 
+        /*
+
         int rows;
         int columns;
         char symbol;
@@ -1213,5 +1215,8 @@ public class Main {
 
 
         scanner.close();
+
+
+         */
     }
 }
