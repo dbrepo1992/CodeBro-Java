@@ -1143,6 +1143,29 @@ public class Main {
 
         // -----------------------------------------------------------------------------
 
+        // BREAK = BREAK OUT OF A LOOP (STOP)
+        // CONTINUE = SKIP CURRENT ITERATION OF A LOOP (SKIP)
+
+        /* BREAK example
+        for (int i = 0; i < 10; i++){
+
+            if (i == 5) {
+                break;      // Once we have 5, we break up the the loop
+            }
+            System.out.print(i + " ");
+        }
+
+         */
+        /* CONTINUE example
+
+        for (int i = 0; i < 10; i++){
+
+            if (i == 5) {
+                continue;   // Once we have 5, we skip this iteration and continue the rest
+            }
+            System.out.print(i + " ");
+        }
         
+         */
     }
 }
