@@ -4,7 +4,7 @@ public class Main {
         // 2D array = An array where each element is an array
         //            Useful for storing a matrix of data
 
-        
+
 
         String[] fruits = {"apple", "orange", "banana"};
         String[] vegetables = {"carrot", "potato", "tomato"};
