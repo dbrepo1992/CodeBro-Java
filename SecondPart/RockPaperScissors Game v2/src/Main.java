@@ -45,9 +45,15 @@ public class Main {
                     System.out.println("You lose!");
                     computerScore++;
                 }
-                System.out.println("Your score: " + playerScore);
-                System.out.println("Computer score: " + computerScore);
-                System.out.println("Out of: " + (playerScore + computerScore) + " rounds");
+                // Final result
+                System.out.println("Final Score: You " + playerScore + " - " + computerScore + " Computer");
+                if (playerScore > computerScore) {
+                    System.out.println("Congratulations! You won the game!");
+                } else if (playerScore < computerScore) {
+                    System.out.println("Sorry! The computer won the game.");
+                } else {
+                    System.out.println("It's a draw!");
+                }
                 System.out.println("Play again? (yes/no)");
                 playAgain = scanner.nextLine().toLowerCase();
 
